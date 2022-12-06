@@ -1,0 +1,17 @@
+.main-container {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: ceneter;
+    height: 1000px;
+}
+
+.sidebar {
+    width: 25%;
+    border: 20px solid;
+}
+
+.content {
+    width: 75%;
+    border: 20px solid;
+}
