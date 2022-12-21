@@ -7,9 +7,9 @@ const Home = () => {
             <div className="hero min-h-screen ">
                 <div className="hero-content text-center">
                     <div className="max-w-md">
-                        <h1 className="text-5xl font-bold">Welcome to skill up platform  </h1>
+                        <h1 className="text-3xl font-bold">Welcome to skill up platform  </h1>
 
-                        <p className="py-6">This is the best online learning platform. And it is student friendly</p>
+                        <p className="py-5">This is the best online learning platform. And it is student friendly</p>
                         <Link to='/courses'><button className="btn btn-primary">Get Started</button></Link>
 
 
