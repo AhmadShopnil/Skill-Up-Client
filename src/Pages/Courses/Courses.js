@@ -14,15 +14,23 @@ const Courses = () => {
                 <div>
                     <div className="grid grid-cols-3 gap-2 lg:grid-cols-1">
 
-
                         {
-                            courses.map(course => <p key={course.id}>
-                                <Link to={`/courses/${course.id}`}>
+                            courses?.length ?
+                                <>
+                                    {
+                                        courses.map(course => <p key={course.id}>
+                                            <Link to={`/courses/${course.id}`}>
 
-                                    <button className="btn btn-primary  m-5 w-50"> {course.name}</button>
+                                                <button className="btn btn-primary  m-5 w-50"> {course.name}</button>
 
-                                </Link>
-                            </p>)
+                                            </Link>
+                                        </p>)
+                                    }
+                                </>
+                                :
+                                <>
+                                    <progress className="progress w-56"></progress>
+                                </>
                         }
 
 
@@ -34,9 +42,23 @@ const Courses = () => {
 
                 <div>
                     <div className="grid flex-grow  lg:grid-cols-3 gap-2  rounded-box place-items-center">
+
                         {
-                            courses.map(course => <CourseCard key={course.id} course={course}></CourseCard>)
+                            courses?.length ?
+                                <>
+                                    {
+                                        courses.map(course => <CourseCard key={course.id} course={course}></CourseCard>)
+                                    }
+                                </>
+                                :
+                                <>
+                                    <progress className="progress w-56"></progress>
+                                </>
                         }
+
+
+
+
 
                     </div>
                 </div>

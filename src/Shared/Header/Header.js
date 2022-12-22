@@ -64,7 +64,7 @@ const Header = () => {
 
                 </div>
                 <div className="navbar-end">
-                    <button onClick={handleToggle} className="btn btn-active btn-accent ">{toggle}</button>
+                    <button onClick={handleToggle} className="btn btn-sm btn-active btn-accent ">{toggle}</button>
                     {
                         user?.uid ?
                             <>
@@ -75,12 +75,12 @@ const Header = () => {
                                         </div>
                                     </label>
                                 </div>
-                                <button onClick={handleLogOut} className="btn btn-outline btn-secondary">Log Out</button>
+                                <button onClick={handleLogOut} className="btn btn-sm btn-outline btn-secondary">Log Out</button>
                             </>
                             :
                             <>
-                                <Link className="btn ml-1" to='/login'>Login</Link>
-                                <Link className="btn ml-1" to='/signup'>Sign Up</Link>
+                                <Link className="btn btn-sm ml-1" to='/login'>Login</Link>
+                                <Link className="btn btn-sm ml-1" to='/signup'>Sign Up</Link>
                             </>
                     }
                 </div>
